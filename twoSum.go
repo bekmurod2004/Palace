@@ -1,31 +1,37 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func TwoSumm() {
-// 	arr := []int{0,2,7,8}
-// 	help := 0
+func TwoSumm() {
+	arr := []int{0,2,7,8}
+	help := 0
 
-// 	// tar := 9
+	tar := 10
 
-// 	for i := 0; i < len(arr); i++ {
-// 		fmt.Println(arr[i])
-// 		for j := 0; j < len(arr); j++ {
-// 			if arr[i] !=arr[j] {
-// 				help = arr[i] +arr[j]
-// 				if  {
+	ans := []int{}
+
+	for i := 0; i < len(arr); i++ {
+		// fmt.Println(arr[i])
+		for j := 0; j < len(arr); j++ {
+			if arr[i] !=arr[j] {
+				help = arr[i] +arr[j]
+				if  tar ==help{
+					ans = append(ans,i,j)
+					fmt.Println(ans)
+					return
 					
-// 				}
+				}
 
-// 				fmt.Printf("%v ",help) 
-// 				fmt.Print(i ,j)
-				
-				
-// 			}
 			
-// 		}
-// 		fmt.Println()
+				
+				
+			}
+			
+		}
+		fmt.Println()
 		
-// 	}
+	}
+
 	
-// }
+	
+}

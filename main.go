@@ -1,77 +1,77 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 
 
 func main() {
-	// TwoSumm()
-	var allTicks  int = 50
-	var zakaz int 
-	action := true
+	TwoSumm()
+	// var allTicks  int = 50
+	// var zakaz int 
+	// action := true
 
-	allPlaces := 0
+	// allPlaces := 0
 
-	var name string
-	var last string
-	var email string
+	// var name string
+	// var last string
+	// var email string
 	
 
-	sum := []string{}
+	// sum := []string{}
 
-	for action {
-		var sub = []string{}
+	// for action {
+	// 	var sub = []string{}
 		
 
-		fmt.Scanln(&name)
-		fmt.Scanln(&last)
-		fmt.Scanln(&email)
+	// 	fmt.Scanln(&name)
+	// 	fmt.Scanln(&last)
+	// 	fmt.Scanln(&email)
 		
 
-		sub = append(sub, name, last, email)
-		sum = append(sum, sub...)
+	// 	sub = append(sub, name, last, email)
+	// 	sum = append(sum, sub...)
 		
 
 
 
-		fmt.Print("nechta joy :")
-		fmt.Scanln(&zakaz)
+	// 	fmt.Print("nechta joy :")
+	// 	fmt.Scanln(&zakaz)
 	
 		
-		if zakaz > 0 {
-			allPlaces += zakaz
-			}
+	// 	if zakaz > 0 {
+	// 		allPlaces += zakaz
+	// 		}
 
 
 	
-			if allPlaces >= 50 {
-				fmt.Println("joy qomadi")
-				// fmt.Println(sum)
-				for i := 0; i < len(sum);  i+= 3 {
+	// 		if allPlaces >= 50 {
+	// 			fmt.Println("joy qomadi")
+	// 			// fmt.Println(sum)
+	// 			for i := 0; i < len(sum);  i+= 3 {
 
-					fmt.Println(sum[i])
-					fmt.Println(sum[i + 1])
-					fmt.Println(sum[i + 2])
-					fmt.Println()
+	// 				fmt.Println(sum[i])
+	// 				fmt.Println(sum[i + 1])
+	// 				fmt.Println(sum[i + 2])
+	// 				fmt.Println()
 					
-				}
-				return
-			}
+	// 			}
+	// 			return
+	// 		}
 
 
-		allTicks -= zakaz
-		fmt.Println("qogan joy : ",allTicks)
+	// 	allTicks -= zakaz
+	// 	fmt.Println("qogan joy : ",allTicks)
 
 
-		if zakaz == 101 {
-			action = false
-		}
+	// 	if zakaz == 101 {
+	// 		action = false
+	// 	}
 
 	
-	}
+	// }
 	
 
-	fmt.Println(allPlaces)
+	// fmt.Println(allPlaces)
 
 	
 
