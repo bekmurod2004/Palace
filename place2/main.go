@@ -11,14 +11,11 @@ func main() {
 	getUsers()
 	
 }
-
-
 func getUsers(){
 	
 	 action := true
 
 	 var halqil string
-
 
 	 var (
 		ism string
@@ -28,17 +25,17 @@ func getUsers(){
 		qay string
 	 )
 
-	 allP := 50
+	 allP := 20
 	 zakazOlJoyla := []int{}
 
 	 allUsersPaptis := []string{}
 	 allUsersMaptis := []string{}
 
 	 for action {
-		var joy string
+		var joy string  
 
-		
-		
+
+
 	    shabUse := make(map[string]string)
 
 		fmt.Print("Tanla odam 'qoshish' || 'korish' ")
@@ -77,7 +74,7 @@ func getUsers(){
 				zakazOlJoyla = append(zakazOlJoyla, numQ)
 				
 			}
-			
+
 
 			shabUse["Ismi"] = ism
 			shabUse["Familiya"] = fam
@@ -103,11 +100,6 @@ func getUsers(){
 			}
 
 
-
-
-
-			
-			
 		}else if halqil == "korish"{
 			
 			fmt.Println()
@@ -125,7 +117,7 @@ func getUsers(){
 
 	 }
 
-	 fmt.Println("----------- All Users -----------")
+	 fmt.Println("         ----------- All Users -----------")
 
 	 for i := 0; i < len(allUsersPaptis); i+= 5 {
 		fmt.Println(allUsersMaptis[i]," :", allUsersPaptis[i])
